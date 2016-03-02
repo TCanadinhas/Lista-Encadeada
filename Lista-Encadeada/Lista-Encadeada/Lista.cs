@@ -68,5 +68,18 @@ namespace Lista_Encadeada
                 return contante;
             } 
         }
+
+        public Unidade BuscaPorPosicao(int p)
+        {
+            int contante = 0;            
+            Unidade aux = Primogenita;
+
+            while (aux != null && contante != p)
+            {
+                aux = aux.Proxima;
+                contante++;
+            }
+            return aux;
+         }
     }
 }

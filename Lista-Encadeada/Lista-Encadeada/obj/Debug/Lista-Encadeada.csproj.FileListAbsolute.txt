@@ -7,3 +7,12 @@ C:\Users\talita.santos\Documents\Visual Studio 2013\Projects\Lista-Encadeada\Lis
 C:\Users\talita.santos\Documents\Visual Studio 2013\Projects\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\bin\Debug\Lista-Encadeada.pdb
 C:\Users\talita.santos\Documents\Visual Studio 2013\Projects\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.exe
 C:\Users\talita.santos\Documents\Visual Studio 2013\Projects\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.pdb
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\bin\Debug\Lista-Encadeada.exe.config
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.exe
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.pdb
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\bin\Debug\Lista-Encadeada.exe
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\bin\Debug\Lista-Encadeada.pdb
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.csprojResolveAssemblyReference.cache
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista_Encadeada.Form1.resources
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista_Encadeada.Properties.Resources.resources
+C:\Users\talita.santos\Desktop\GitHub\Lista-Encadeada\Lista-Encadeada\Lista-Encadeada\obj\Debug\Lista-Encadeada.csproj.GenerateResource.Cache

@@ -33,6 +33,7 @@
             this.listando = new System.Windows.Forms.RichTextBox();
             this.porPosicao = new System.Windows.Forms.RadioButton();
             this.posicao = new System.Windows.Forms.TextBox();
+            this.aviso = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Setar
@@ -59,7 +60,6 @@
             // 
             // listando
             // 
-            this.listando.Enabled = false;
             this.listando.Location = new System.Drawing.Point(12, 12);
             this.listando.Name = "listando";
             this.listando.Size = new System.Drawing.Size(260, 124);
@@ -76,7 +76,7 @@
             this.porPosicao.TabStop = true;
             this.porPosicao.Text = "Por posição";
             this.porPosicao.UseVisualStyleBackColor = true;
-            this.porPosicao.CheckedChanged += new System.EventHandler(this.PorPosicao);
+            this.porPosicao.Click += new System.EventHandler(this.PorPosicao);
             // 
             // posicao
             // 
@@ -89,12 +89,22 @@
             this.posicao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.posicao.Click += new System.EventHandler(this.ZerarPosicao);
             // 
+            // aviso
+            // 
+            this.aviso.AutoSize = true;
+            this.aviso.ForeColor = System.Drawing.Color.Red;
+            this.aviso.Location = new System.Drawing.Point(13, 239);
+            this.aviso.Name = "aviso";
+            this.aviso.Size = new System.Drawing.Size(0, 13);
+            this.aviso.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.aviso);
             this.Controls.Add(this.posicao);
             this.Controls.Add(this.porPosicao);
             this.Controls.Add(this.listando);
@@ -114,6 +124,7 @@
         public System.Windows.Forms.TextBox Setador;
         private System.Windows.Forms.RadioButton porPosicao;
         private System.Windows.Forms.TextBox posicao;
+        private System.Windows.Forms.Label aviso;
     }
 }
 
