@@ -25,7 +25,6 @@ namespace Lista_Encadeada
 
         private void Valores(object sender, EventArgs e)
         {
-
                 valor = Convert.ToInt32(Setador.Text);
 
                 Unidade item = new Unidade(valor);
