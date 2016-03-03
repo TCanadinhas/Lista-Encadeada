@@ -42,6 +42,13 @@ namespace Lista_Encadeada
             }
         }
 
+        public void IncorporaNaLista(Unidade u, int p)
+        {
+            Unidade aux = BuscaPorPosicao(p - 1);
+            u.Proxima = aux.Proxima;
+            aux.Proxima = u;
+        }
+
         public Unidade BuscaCacula()
         {
             Unidade aux = Primogenita;
@@ -71,15 +78,28 @@ namespace Lista_Encadeada
 
         public Unidade BuscaPorPosicao(int p)
         {
-            int contante = 0;            
+            int contante = 1;            
             Unidade aux = Primogenita;
 
-            while (aux != null && contante != p)
+            while (contante < p)
             {
                 aux = aux.Proxima;
                 contante++;
             }
             return aux;
-         }
+            
+        }
+
+        public void Print()
+        {
+            Unidade bonito = Primogenita;
+            while(bonito != null)
+            {
+                Console.WriteLine(bonito.Valor);
+                bonito = bonito.Proxima;
+            }
+        }
+
+
     }
 }

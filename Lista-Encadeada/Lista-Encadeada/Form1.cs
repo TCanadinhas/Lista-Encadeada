@@ -14,7 +14,8 @@ namespace Lista_Encadeada
     {
         private Lista lista;
         private int valor;
-        private int setPosicao;
+        //private int setPosicao;
+        private int p;
 
         public Form1()
         {
@@ -25,18 +26,29 @@ namespace Lista_Encadeada
 
         private void Valores(object sender, EventArgs e)
         {
-                valor = Convert.ToInt32(Setador.Text);
+            valor = Convert.ToInt32(Setador.Text);
 
-                Unidade item = new Unidade(valor);
+            Unidade item = new Unidade(valor), aux;
 
-                if (posicao.Enabled)
-                {
-                    valor = Convert.ToInt32((lista.BuscaPorPosicao(setPosicao)).Valor);
-                }
-
+            if (posicao.Enabled)
+            {
+                //valor = Convert.ToInt32((lista.BuscaPorPosicao(setPosicao)).Valor);
+                p = Convert.ToInt32(posicao.Text);
+                lista.IncorporaNaLista(item, p);
+                listando.Text += "Valor " + p + ": " + item.ComoPalavra;
+            }
+            else
+            {
                 lista.Incorpora(item);
                 listando.Text += "Valor " + lista.Contante.ToString() + ": " + item.ComoPalavra;
+            }
+            lista.Print();
 
+            listando.Text = "";
+            for (int i = 1; i <= lista.Contante; i++)
+            {
+                listando.Text += "Valor " + i + ": " + lista.BuscaPorPosicao(i).ComoPalavra;
+            }
         }
 
         private void PorPosicao(object sender, EventArgs e)
@@ -53,7 +65,5 @@ namespace Lista_Encadeada
         {
             posicao.Text = null;
         }
-
-
     }
 }
