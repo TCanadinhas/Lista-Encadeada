@@ -90,6 +90,9 @@ namespace Lista_Encadeada
             
         }
 
+        /// <summary>
+        /// Para qualquer bug que der, conferir por aqui :)
+        /// </summary>
         public void Print()
         {
             Unidade bonito = Primogenita;

@@ -32,7 +32,6 @@ namespace Lista_Encadeada
 
             if (posicao.Enabled)
             {
-                //valor = Convert.ToInt32((lista.BuscaPorPosicao(setPosicao)).Valor);
                 p = Convert.ToInt32(posicao.Text);
                 lista.IncorporaNaLista(item, p);
                 listando.Text += "Valor " + p + ": " + item.ComoPalavra;
@@ -42,7 +41,6 @@ namespace Lista_Encadeada
                 lista.Incorpora(item);
                 listando.Text += "Valor " + lista.Contante.ToString() + ": " + item.ComoPalavra;
             }
-            lista.Print();
 
             listando.Text = "";
             for (int i = 1; i <= lista.Contante; i++)
