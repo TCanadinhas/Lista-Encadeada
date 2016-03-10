@@ -6,7 +6,7 @@ Feito no IDE <i>Visual studio</i>, utilizando C#.
 
 <hr>
 
-AS BATATAS (as etapas e suas versões)
+<h3><b>AS BATATAS</b></h3> <h5>(as etapas e suas versões)</h5>
 
 <p><i>1.</i> Adiciona itens no final da estrutura (v.1)</p>
 <p><i>2.</i> Adiciona itens em uma posição específica (v.2)</p>
