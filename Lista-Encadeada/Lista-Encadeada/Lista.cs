@@ -42,9 +42,17 @@ namespace Lista_Encadeada
             }
         }
 
-        public void IncorporaNaLista(Unidade u, int p)
+        public void IncorporaNaListaPorPosicao(Unidade u, int p)
         {
             Unidade aux = BuscaPorPosicao(p - 1);
+
+            u.Proxima = aux.Proxima;
+            aux.Proxima = u;
+        }
+
+        public void IncorporaNaListaPorValor(Unidade u, int v)
+        {
+            Unidade aux = BuscaPorValor(v);
             u.Proxima = aux.Proxima;
             aux.Proxima = u;
         }
@@ -87,7 +95,32 @@ namespace Lista_Encadeada
                 contante++;
             }
             return aux;
-            
+        }
+
+        public Unidade BuscaPorValor(int v)
+        {
+            Unidade aux = Primogenita;
+            int contante = 1;
+
+            while(aux.Valor != v)
+            {
+                aux = aux.Proxima;
+                contante++;
+            }
+            return aux;
+        }
+
+        public int BuscaPosicao(int v, int condicao)
+        {
+            Unidade aux = Primogenita;
+            int contante = 1;
+
+            while (v != condicao)
+            {
+                aux = aux.Proxima;
+                contante++;
+            }
+            return contante;
         }
 
         /// <summary>

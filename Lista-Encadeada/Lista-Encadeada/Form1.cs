@@ -13,9 +13,8 @@ namespace Lista_Encadeada
     public partial class Form1 : Form
     {
         private Lista lista;
-        private int valor;
-        //private int setPosicao;
-        private int p;
+        private int valor, p, v;
+
 
         public Form1()
         {
@@ -28,19 +27,27 @@ namespace Lista_Encadeada
         {
             valor = Convert.ToInt32(Setador.Text);
 
-            Unidade item = new Unidade(valor), aux;
+            Unidade item = new Unidade(valor);
 
             if (posicao.Enabled)
             {
                 p = Convert.ToInt32(posicao.Text);
-                lista.IncorporaNaLista(item, p);
+                lista.IncorporaNaListaPorPosicao(item, p);
                 listando.Text += "Valor " + p + ": " + item.ComoPalavra;
+            }
+            if(valorBox.Enabled)
+            {
+                v = Convert.ToInt32(valorBox.Text);
+                lista.IncorporaNaListaPorValor(item, v);
+                listando.Text += "Valor "  + ": " + item.ComoPalavra;
             }
             else
             {
                 lista.Incorpora(item);
                 listando.Text += "Valor " + lista.Contante.ToString() + ": " + item.ComoPalavra;
             }
+
+            lista.Print();
 
             listando.Text = "";
             for (int i = 1; i <= lista.Contante; i++)
@@ -62,6 +69,16 @@ namespace Lista_Encadeada
         private void ZerarPosicao(object sender, EventArgs e)
         {
             posicao.Text = null;
+        }
+
+        private void PorValor(object sender, EventArgs e)
+        {
+            valorBox.Enabled = true;
+        }
+
+        private void ZerarPorValor(object sender, EventArgs e)
+        {
+            valorBox.Text = null;
         }
     }
 }

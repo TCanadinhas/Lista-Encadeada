@@ -34,6 +34,8 @@
             this.porPosicao = new System.Windows.Forms.RadioButton();
             this.posicao = new System.Windows.Forms.TextBox();
             this.aviso = new System.Windows.Forms.Label();
+            this.valorBox = new System.Windows.Forms.TextBox();
+            this.porValorr = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // Setar
@@ -98,12 +100,37 @@
             this.aviso.Size = new System.Drawing.Size(0, 13);
             this.aviso.TabIndex = 5;
             // 
+            // valorBox
+            // 
+            this.valorBox.Enabled = false;
+            this.valorBox.Location = new System.Drawing.Point(100, 212);
+            this.valorBox.Name = "valorBox";
+            this.valorBox.Size = new System.Drawing.Size(81, 20);
+            this.valorBox.TabIndex = 7;
+            this.valorBox.Text = "Valor";
+            this.valorBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.valorBox.Click += new System.EventHandler(this.ZerarPorValor);
+            // 
+            // porValorr
+            // 
+            this.porValorr.AutoSize = true;
+            this.porValorr.Location = new System.Drawing.Point(100, 189);
+            this.porValorr.Name = "porValorr";
+            this.porValorr.Size = new System.Drawing.Size(67, 17);
+            this.porValorr.TabIndex = 6;
+            this.porValorr.TabStop = true;
+            this.porValorr.Text = "Por valor";
+            this.porValorr.UseVisualStyleBackColor = true;
+            this.porValorr.Click += new System.EventHandler(this.PorValor);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.valorBox);
+            this.Controls.Add(this.porValorr);
             this.Controls.Add(this.aviso);
             this.Controls.Add(this.posicao);
             this.Controls.Add(this.porPosicao);
@@ -125,6 +152,8 @@
         private System.Windows.Forms.RadioButton porPosicao;
         private System.Windows.Forms.TextBox posicao;
         private System.Windows.Forms.Label aviso;
+        private System.Windows.Forms.TextBox valorBox;
+        private System.Windows.Forms.RadioButton porValorr;
     }
 }
 
