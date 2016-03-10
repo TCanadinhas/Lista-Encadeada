@@ -36,6 +36,9 @@
             this.aviso = new System.Windows.Forms.Label();
             this.valorBox = new System.Windows.Forms.TextBox();
             this.porValorr = new System.Windows.Forms.RadioButton();
+            this.TrocarPosicao1 = new System.Windows.Forms.TextBox();
+            this.TrocarPosicoes = new System.Windows.Forms.RadioButton();
+            this.TrocarPosicao2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Setar
@@ -123,12 +126,49 @@
             this.porValorr.UseVisualStyleBackColor = true;
             this.porValorr.Click += new System.EventHandler(this.PorValor);
             // 
+            // TrocarPosicao1
+            // 
+            this.TrocarPosicao1.Enabled = false;
+            this.TrocarPosicao1.Location = new System.Drawing.Point(13, 274);
+            this.TrocarPosicao1.Name = "TrocarPosicao1";
+            this.TrocarPosicao1.Size = new System.Drawing.Size(100, 20);
+            this.TrocarPosicao1.TabIndex = 8;
+            this.TrocarPosicao1.Text = "Posição1";
+            this.TrocarPosicao1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TrocarPosicao1.Click += new System.EventHandler(this.ZerarPosicao1);
+            // 
+            // TrocarPosicoes
+            // 
+            this.TrocarPosicoes.AutoSize = true;
+            this.TrocarPosicoes.Location = new System.Drawing.Point(13, 251);
+            this.TrocarPosicoes.Name = "TrocarPosicoes";
+            this.TrocarPosicoes.Size = new System.Drawing.Size(102, 17);
+            this.TrocarPosicoes.TabIndex = 9;
+            this.TrocarPosicoes.TabStop = true;
+            this.TrocarPosicoes.Text = "Trocar Posições";
+            this.TrocarPosicoes.UseVisualStyleBackColor = true;
+            this.TrocarPosicoes.Click += new System.EventHandler(this.TrocarEntrePosicoes);
+            // 
+            // TrocarPosicao2
+            // 
+            this.TrocarPosicao2.Enabled = false;
+            this.TrocarPosicao2.Location = new System.Drawing.Point(13, 301);
+            this.TrocarPosicao2.Name = "TrocarPosicao2";
+            this.TrocarPosicao2.Size = new System.Drawing.Size(100, 20);
+            this.TrocarPosicao2.TabIndex = 10;
+            this.TrocarPosicao2.Text = "Posição2";
+            this.TrocarPosicao2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TrocarPosicao2.Click += new System.EventHandler(this.ZerarPosicao2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 336);
+            this.Controls.Add(this.TrocarPosicao2);
+            this.Controls.Add(this.TrocarPosicoes);
+            this.Controls.Add(this.TrocarPosicao1);
             this.Controls.Add(this.valorBox);
             this.Controls.Add(this.porValorr);
             this.Controls.Add(this.aviso);
@@ -154,6 +194,9 @@
         private System.Windows.Forms.Label aviso;
         private System.Windows.Forms.TextBox valorBox;
         private System.Windows.Forms.RadioButton porValorr;
+        private System.Windows.Forms.TextBox TrocarPosicao1;
+        private System.Windows.Forms.RadioButton TrocarPosicoes;
+        private System.Windows.Forms.TextBox TrocarPosicao2;
     }
 }
 

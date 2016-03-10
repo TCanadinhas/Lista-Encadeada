@@ -57,6 +57,9 @@ namespace Lista_Encadeada
             aux.Proxima = u;
         }
 
+ 
+
+
         public Unidade BuscaCacula()
         {
             Unidade aux = Primogenita;

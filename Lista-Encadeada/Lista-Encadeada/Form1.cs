@@ -13,7 +13,7 @@ namespace Lista_Encadeada
     public partial class Form1 : Form
     {
         private Lista lista;
-        private int valor, p, v;
+        private int valor, p, v, a, b;
 
 
         public Form1()
@@ -47,8 +47,6 @@ namespace Lista_Encadeada
                 listando.Text += "Valor " + lista.Contante.ToString() + ": " + item.ComoPalavra;
             }
 
-            lista.Print();
-
             listando.Text = "";
             for (int i = 1; i <= lista.Contante; i++)
             {
@@ -79,6 +77,23 @@ namespace Lista_Encadeada
         private void ZerarPorValor(object sender, EventArgs e)
         {
             valorBox.Text = null;
+        }
+
+
+        private void ZerarPosicao1(object sender, EventArgs e)
+        {
+            TrocarPosicao1.Text = null;
+        }
+
+        private void ZerarPosicao2(object sender, EventArgs e)
+        {
+            TrocarPosicao2.Text = null;
+        }
+
+        private void TrocarEntrePosicoes(object sender, EventArgs e)
+        {
+            TrocarPosicao1.Enabled = true;
+            TrocarPosicao2.Enabled = true;
         }
     }
 }
